@@ -1,0 +1,1 @@
+All images for the theme should be placed here
