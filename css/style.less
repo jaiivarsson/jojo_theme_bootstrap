@@ -1,0 +1,80 @@
+body {
+    padding: 10px 0;
+}
+
+#wrap {
+    background: @white;
+    border: 1px solid @gray;
+    .border-radius(15px);
+    .box-shadow(0px 0px 10px 10px fade(@gray, 50%));
+    padding: 10px;
+}
+
+#header {
+    #gradient > .vertical(#149bdf, darken(#149bdf, 10%));
+    .border-radius(5px);
+    height: 100px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#header a.logo {
+    color: @white;
+    font: bolder 4.0em 'Trebuchet MS', Arial, Sans-serif;
+    left: 10px;
+    position: absolute;
+    text-shadow: 2px 2px 10px fade(@gray, 50%);
+    top: 10px;
+    .transition(all .2s linear);
+}
+
+#header a.logo:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 15px @grayDark;
+}
+
+#breadcrumbs {
+    background: none;
+    border: none;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.navbar .btn-navbar {
+    color: @white;
+}
+
+#content-wrap {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer #footernav {
+    text-align: center;
+}
+
+footer #footernav ul {
+    margin-left: 0;
+}
+
+footer #footernav ul li {
+    display:inline;
+    list-style: none;
+    margin: 0 10px;
+}
+
+#credits {
+    color: @gray;
+    text-align: right;
+    a {
+        color: @gray;
+    }
+}
+
+/* reset text height since it is currently being stripped from the file by the optimiser */
+textarea {
+  height: auto;
+}
